@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ResearchOfflineQiz</string>
+    <string name="title_activity_htmlweb_view">HTMLWebView</string>
+    <string name="title_activity_test_on_click_listener">TestOnClickListener</string>
+</resources>
