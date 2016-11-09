@@ -33,7 +33,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".TestOnClickListener"
+            android:name=".ReadHTMLData"
             android:label="@string/title_activity_test_on_click_listener"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -42,6 +42,10 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".PostDataToAndroid"
+            android:label="@string/title_activity_post_data_to_android"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

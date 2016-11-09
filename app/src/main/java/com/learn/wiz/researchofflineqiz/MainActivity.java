@@ -17,10 +17,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-import org.jsoup.Jsoup;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -67,7 +63,7 @@ public class MainActivity extends Activity {
         Button btnGo=(Button) findViewById(R.id.btnGo);
         btnGo.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, TestOnClickListener.class);
+                Intent intent = new Intent(MainActivity.this, ReadHTMLData.class);
                 startActivity(intent);
             }
         });
@@ -217,24 +213,14 @@ public class MainActivity extends Activity {
 
             myWebView.loadUrl(filePath);
             try{
-                File f=new File(Environment.getExternalStorageDirectory().toString(),"/sampleQizForm.html");
-                if(f.exists()){
-                    Log.i("file  is exists", "file ");
-                }
+//                File f=new File(Environment.getExternalStorageDirectory().toString(),file_name);
+//                if(f.exists()){
+//                    Log.i("file  is exists", "file ");
+//                }
 
             } catch (Exception e){
                 Log.i(e.toString(), "onPostExecute: ");
             }
-
-//            org.jsoup.nodes.Element document = Jsoup.parse(filePath);
-//            String a= document.getElementById("gender").val();
-
-//            Log.i(a, "onPostExecute:");
-            // Displaying downloaded image into image view
-            // Reading image path from sdcard
-            //String imagePath = String.format("%1+%2",Environment.getExternalStorageDirectory().toString(),file_name);
-            // setting downloaded into image view
-           // my_image.setImageDrawable(Drawable.createFromPath(imagePath));
         }
 
         public String changeToDownloadedFileName(String fileName){
@@ -257,10 +243,6 @@ public class MainActivity extends Activity {
             int endIndex=fileName.length()-1;
             if (pos > 0) {
                 fileName = fileName.substring(0, pos);
-//                while(Character.isDigit(fileName.charAt(endIndex))){
-//                    fileName = fileName.substring(0,endIndex);
-//                    endIndex--;
-//                }
             }
             return fileName;
         }
