@@ -52,62 +52,8 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="758c60c60a15a0f3de7bfb75ae16108f23ea269c">
+        sha1="aba597f094955ddd7543597af87c3fe3b3f85cec">
         <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_baa07d14079db0475659fb5e4055309c53c5c8fd\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_63f3e56e59f5ae0bf94a246ab3595535c1b51478\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_ad28c2f0bdb56812382a6e038b49b68dc3c787a1\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_05ec850c643d390e2d47b046ebdd206d15cce91f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_db11ffe9476e167b2d481191b02e0c3bc97cb9dc\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_707507ddd022369da0c9e5df9c5ff58ee040524a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_515981f7b258f23cb2e09984ca700eb01fdc8aec\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -138,12 +84,57 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_63f3e56e59f5ae0bf94a246ab3595535c1b51478\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_ad28c2f0bdb56812382a6e038b49b68dc3c787a1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_05ec850c643d390e2d47b046ebdd206d15cce91f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
         <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_97e9e98e9eaad74e682d59b92a7d0eec77502b8a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_db11ffe9476e167b2d481191b02e0c3bc97cb9dc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_707507ddd022369da0c9e5df9c5ff58ee040524a\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -174,11 +165,20 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_515981f7b258f23cb2e09984ca700eb01fdc8aec\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="f4ef988086c20c3df797b79d21d9f26a9e597dfd">
+        sha1="abee28a48d741bd56640dbf806ea88ab75259e5e">
         <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_5ffe681c47ff5ff270b34d52cc763b4559234782\classes.dex" />
     </item>
 
