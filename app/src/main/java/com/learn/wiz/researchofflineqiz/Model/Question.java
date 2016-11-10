@@ -14,18 +14,15 @@ public class Question {
 
     // constructors
     public Question() {
-
-    }
-
-    public Question(String tag_name) {
-        this.status = status;
-    }
-
-    public Question(String question_id, String status) {
-        this.question_id = question_id;
-        this.status = status;
         answers = new ArrayList<>();
     }
+
+    public Question(String question_id) {
+        this.question_id = question_id;
+        this.status = "process";
+        answers = new ArrayList<>();
+    }
+
     // setter
     public void setQuestion_id(String question_id) {
         this.question_id = question_id;

@@ -15,7 +15,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".View.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".HTMLWebView"
+            android:name=".View.Sqlite$HTMLWebView"
             android:label="@string/title_activity_htmlweb_view"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -33,7 +33,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ReadHTMLData"
+            android:name=".View.ReadHTMLData"
             android:label="@string/title_activity_test_on_click_listener"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -43,9 +43,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".PostDataToAndroid"
+            android:name=".View.PostDataToAndroid"
             android:label="@string/title_activity_post_data_to_android"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View.Sqlite"
+            android:label="@string/title_activity_sqlite"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

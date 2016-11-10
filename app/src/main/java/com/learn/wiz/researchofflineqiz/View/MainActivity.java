@@ -1,4 +1,4 @@
-package com.learn.wiz.researchofflineqiz;
+package com.learn.wiz.researchofflineqiz.View;
 
 import android.Manifest;
 import android.app.Activity;
@@ -16,6 +16,10 @@ import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+
+import com.learn.wiz.researchofflineqiz.R;
+import com.learn.wiz.researchofflineqiz.helper.DatabaseHelper;
+import com.learn.wiz.researchofflineqiz.helper.Utilities;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -52,6 +56,8 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         verifyStoragePermissions(this); //api after 23+ need to ask user's Permission
         // show progress bar button
+        Utilities.db = new DatabaseHelper(getApplicationContext()); //initialed db
+
         txt_downloadURL = (EditText) findViewById(R.id.downloadURL);
 
         btnShowProgress = (Button) findViewById(R.id.btnProgressBar);

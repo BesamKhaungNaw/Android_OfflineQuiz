@@ -1,4 +1,4 @@
-package com.learn.wiz.researchofflineqiz;
+package com.learn.wiz.researchofflineqiz.View;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -14,6 +14,8 @@ import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.learn.wiz.researchofflineqiz.R;
 
 public class PostDataToAndroid extends AppCompatActivity {
     private WebView wv;

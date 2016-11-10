@@ -3,4 +3,5 @@
     <string name="title_activity_htmlweb_view">HTMLWebView</string>
     <string name="title_activity_test_on_click_listener">TestOnClickListener</string>
     <string name="title_activity_post_data_to_android">PostDataToAndroid</string>
+    <string name="title_activity_sqlite">Sqlite</string>
 </resources>
