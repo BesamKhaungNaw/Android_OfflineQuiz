@@ -59,8 +59,12 @@ public class ReadHTMLData extends Activity {
             }
         });
 
+<<<<<<< Updated upstream:app/src/main/java/com/learn/wiz/researchofflineqiz/View/ReadHTMLData.java
         //sampleQizForm.html is the html form that want to test
         String filePath = String.format("file://%s/%s",Environment.getExternalStorageDirectory(),"sampleQizForm.html");
+=======
+        String filePath = String.format("file://%s/%s",Environment.getExternalStorageDirectory(),"Qiz1024.html");
+>>>>>>> Stashed changes:app/src/main/java/com/learn/wiz/researchofflineqiz/ReadHTMLData.java
         webView.loadUrl(filePath);
     }
 

@@ -52,7 +52,11 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
+<<<<<<< Updated upstream
         sha1="aba597f094955ddd7543597af87c3fe3b3f85cec">
+=======
+        sha1="952840283d9119a656437687a7bf71cc84b1d6ba">
+>>>>>>> Stashed changes
         <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_baa07d14079db0475659fb5e4055309c53c5c8fd\classes.dex" />
     </item>
     <item
@@ -178,7 +182,11 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
+<<<<<<< Updated upstream
         sha1="abee28a48d741bd56640dbf806ea88ab75259e5e">
+=======
+        sha1="7ca4e747e4c1bfbace116a3d2dc37920be98b0f6">
+>>>>>>> Stashed changes
         <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_5ffe681c47ff5ff270b34d52cc763b4559234782\classes.dex" />
     </item>
 
