@@ -21,6 +21,8 @@ public class QuestionController {
                 Utilities.db.createAnswer(answer);
             }
         }
+
+        System.out.println("Finished Created Questions and answers ");
     }
 
     //getAll

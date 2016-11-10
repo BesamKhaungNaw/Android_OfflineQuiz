@@ -52,39 +52,8 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-<<<<<<< Updated upstream
-        sha1="aba597f094955ddd7543597af87c3fe3b3f85cec">
-=======
-        sha1="952840283d9119a656437687a7bf71cc84b1d6ba">
->>>>>>> Stashed changes
+        sha1="1bf76c5032e547f00c86f63803ca4ca13e78d797">
         <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_baa07d14079db0475659fb5e4055309c53c5c8fd\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_59ce14e57f226a98a9b480fda242613902e41aa6\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_0ebedea75c74728e4bea4ea7ef854514277be852\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_f95a2c2d1bb8a21bd44cedf3c1de1778f00616d6\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -115,15 +84,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
-        <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_97e9e98e9eaad74e682d59b92a7d0eec77502b8a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -139,6 +99,51 @@
         revision="25.0.0"
         sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
         <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_707507ddd022369da0c9e5df9c5ff58ee040524a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_515981f7b258f23cb2e09984ca700eb01fdc8aec\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_59ce14e57f226a98a9b480fda242613902e41aa6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_0ebedea75c74728e4bea4ea7ef854514277be852\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_f95a2c2d1bb8a21bd44cedf3c1de1778f00616d6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_97e9e98e9eaad74e682d59b92a7d0eec77502b8a\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -169,24 +174,11 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_515981f7b258f23cb2e09984ca700eb01fdc8aec\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-<<<<<<< Updated upstream
-        sha1="abee28a48d741bd56640dbf806ea88ab75259e5e">
-=======
-        sha1="7ca4e747e4c1bfbace116a3d2dc37920be98b0f6">
->>>>>>> Stashed changes
+        sha1="e60cb701fd7205b430c9cf8ddc9990210de8b80e">
         <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_5ffe681c47ff5ff270b34d52cc763b4559234782\classes.dex" />
     </item>
 

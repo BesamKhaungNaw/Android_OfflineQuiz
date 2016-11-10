@@ -6,4 +6,7 @@ package com.learn.wiz.researchofflineqiz.helper;
 
 public class Utilities {
     public static DatabaseHelper db;
+
+    //html_default file name
+    public static String file_name ="index.html";
 }

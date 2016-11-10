@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Environment;
 import android.support.annotation.NonNull;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebSettings;
@@ -58,14 +57,8 @@ public class ReadHTMLData extends Activity {
                 }
             }
         });
-
-<<<<<<< Updated upstream:app/src/main/java/com/learn/wiz/researchofflineqiz/View/ReadHTMLData.java
         //sampleQizForm.html is the html form that want to test
-        String filePath = String.format("file://%s/%s",Environment.getExternalStorageDirectory(),"sampleQizForm.html");
-=======
-        String filePath = String.format("file://%s/%s",Environment.getExternalStorageDirectory(),"Qiz1024.html");
->>>>>>> Stashed changes:app/src/main/java/com/learn/wiz/researchofflineqiz/ReadHTMLData.java
-        webView.loadUrl(filePath);
+        webView.loadUrl(getIntent().getExtras().getString("filePath"));
     }
 
 
@@ -99,6 +92,7 @@ public class ReadHTMLData extends Activity {
          */
         @JavascriptInterface
         public void htmlFilledUpData(String json_string) {
+
             List<Question> list = new ArrayList<>();
             try{
                 JSONObject json_data = new JSONObject(json_string);
@@ -110,24 +104,17 @@ public class ReadHTMLData extends Activity {
                     jArray =new JSONArray(json_data.get(question_key).toString());
                     System.out.println("This is JArray string "+jArray.toString());
 
-                //    List<Answer> list_answers =new ArrayList<>();
                     Question q = new Question(question_key);
 
-                    //get Answer values as [key:value]
                     for(int i=0;i<jArray.length();i++){
                         JSONObject data = new JSONObject(jArray.get(i).toString());
-//                        System.out.println("This is data object "+data.toString());
-//                        System.out.println("This is data keys "+data.keys().next().toString());
-//                        System.out.println("This is value "+ data.get(data.keys().next().toString()).toString());
                         new Answer(data.keys().next().toString(),data.get(data.keys().next().toString()).toString(),q);
                     }
                     list.add(q);
 
                 }
 
-                createQuestions(list);
-               // System.out.println("this is json-data "+json_data.toString());
-             //   Toast.makeText(ReadHTMLData.this, list.toString(), Toast.LENGTH_LONG).show();
+                QuestionController.createQuestions(list);
                 Intent intent = new Intent(ReadHTMLData.this, Sqlite.class);
                 startActivity(intent);
             } catch (Exception e){
@@ -137,18 +124,6 @@ public class ReadHTMLData extends Activity {
     }
 
 
-    public void createQuestions(List<Question> questions){
 
-        for (Question question:
-                questions) {
-            Utilities.db.createQuestion(question);
-            for (Answer answer:
-                    question.getAnswers()){
-                Utilities.db.createAnswer(answer);
-            }
-        }
-
-        System.out.println("Finished Created Questions and answers ");
-    }
 
 }

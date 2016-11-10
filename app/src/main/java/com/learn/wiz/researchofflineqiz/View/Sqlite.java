@@ -24,7 +24,6 @@ public class Sqlite extends AppCompatActivity {
             for(Answer answer:question.getAnswers()){
                 System.out.println(" Retrive answer of each from sqlite " + answer.getValue());
             }
-
         }
 
 

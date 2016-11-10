@@ -53,8 +53,12 @@ public class MainActivity extends Activity {
     // File url to download
     private static String file_url=null;
 
-    //File downloaded file name
-    private static String file_name =null;
+    // QizID for zip sub foler
+    String quizID = null;
+
+
+    //File path to parse by Intent
+    String filePath =null;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -67,7 +71,6 @@ public class MainActivity extends Activity {
         txt_downloadURL = (EditText) findViewById(R.id.downloadURL);
 
         btnShowProgress = (Button) findViewById(R.id.btnProgressBar);
-        // Image view to show image after downloading
 
         myWebView = (WebView) findViewById(R.id.webView);
 
@@ -76,6 +79,7 @@ public class MainActivity extends Activity {
         btnGo.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ReadHTMLData.class);
+                intent.putExtra("filePath",filePath);
                 startActivity(intent);
             }
         });
@@ -118,8 +122,9 @@ public class MainActivity extends Activity {
         protected void onPostExecute(String result) {
             dismissProgress();
           //  String filePath = String.format("file://%s/%s",Environment.getExternalStorageDirectory(),file_name);
-            myWebView.loadUrl("file://"+result+".html");
+
             if ( result == null ) { return; }
+            else { myWebView.loadUrl(filePath=String.format("file://%s/%s/%s",result,quizID,Utilities.file_name));}
             // something went wrong, post a message to user - you could use a dialog here or whatever
             Toast.makeText(MainActivity.this, result, Toast.LENGTH_LONG ).show();
         }
@@ -143,8 +148,8 @@ public class MainActivity extends Activity {
 
         String fileExtenstion = MimeTypeMap.getFileExtensionFromUrl(url);
         //quizID is folder Name with QizID
-        String quizID=   "Quiz/"+URLUtil.guessFileName(url,null,"").replace("."+fileExtenstion,"");
-        File outputDir = ExternalStorage.getSDCacheDir( this,quizID);
+        quizID = URLUtil.guessFileName(url,null,"").replace("."+fileExtenstion,"");
+        File outputDir = ExternalStorage.getSDCacheDir( this,"Quiz/"+quizID);
 
         try {
             DownloadFile.download( url, zipFile, zipDir );
@@ -239,135 +244,5 @@ public class MainActivity extends Activity {
                 return null;
         }
     }
-
-    /**
-     * Background Async Task to download file
-     * */
-//    class DownloadFileFromURL extends AsyncTask<String, String, String> {
-//
-//        /**
-//         * Before starting background thread
-//         * Show Progress Bar Dialog
-//         * */
-//        @Override
-//        protected void onPreExecute() {
-//            super.onPreExecute();
-//            showDialog(progress_bar_type);
-//        }
-//
-//        /**
-//         * Downloading file in background thread
-//         * */
-//        @Override
-//        protected String doInBackground(String... f_url) {
-//            int count;
-//            try {
-//                URL url = new URL(f_url[0]);
-//                file_name = new  File(url.getPath().toString()).getName();
-//                URLConnection connection = url.openConnection();
-//                connection.connect();
-//                // getting file length
-//                int lenghtOfFile = connection.getContentLength();
-//
-//                // input stream to read file - with 8k buffer
-//                InputStream input = new BufferedInputStream(url.openStream(), 8192);
-//
-//                // Output stream to write file
-//                OutputStream output = new FileOutputStream(String.format("/sdcard/%s",file_name=changeToDownloadedFileName(file_name)));
-//
-//                byte data[] = new byte[1024];
-//
-//                long total = 0;
-//
-//                while ((count = input.read(data)) != -1) {
-//                    total += count;
-//                    // publishing the progress....
-//                    // After this onProgressUpdate will be called
-//                    publishProgress(""+(int)((total*100)/lenghtOfFile));
-//
-//                    // writing data to file
-//                    output.write(data, 0, count);
-//                }
-//
-//                // flushing output
-//                output.flush();
-//
-//                // closing streams
-//                output.close();
-//                input.close();
-//
-//            } catch (Exception e) {
-//                Log.e("Error: ", e.getMessage());
-//            }
-//
-//            return null;
-//        }
-//
-//        /**
-//         * Updating progress bar
-//         * */
-//        protected void onProgressUpdate(String... progress) {
-//            // setting progress percentage
-//            pDialog.setProgress(Integer.parseInt(progress[0]));
-//        }
-//
-//        /**
-//         * After completing background task
-//         * Dismiss the progress dialog
-//         * **/
-//        @Override
-//        protected void onPostExecute(String file_url) {
-//            // dismiss the dialog after the file was downloaded
-//            dismissDialog(progress_bar_type);
-//
-//            String filePath = String.format("file://%s/%s",Environment.getExternalStorageDirectory(),file_name);
-//
-//            myWebView.loadUrl(filePath);
-//            try{
-////                File f=new File(Environment.getExternalStorageDirectory().toString(),file_name);
-////                if(f.exists()){
-////                    Log.i("file  is exists", "file ");
-////                }
-//
-//            } catch (Exception e){
-//                Log.i(e.toString(), "onPostExecute: ");
-//            }
-//        }
-//
-//        public String changeToDownloadedFileName(String fileName){
-//
-//                int num = 0;
-//                File photo = new File(Environment.getExternalStorageDirectory(), fileName);
-//                String fileExtension =  getFileExtension(fileName);
-//                fileName = getfileNameWithoutExtension(fileName);
-//            while(photo.exists()) {
-//                    num=num+1;
-//                    fileName = fileName + num +fileExtension;
-//                    photo = new File(Environment.getExternalStorageDirectory(), fileName);
-//            }
-//            return fileName+fileExtension;
-//        }
-//
-//        //Filename without Extension
-//        public String getfileNameWithoutExtension(String fileName){
-//            int pos = fileName.lastIndexOf(".");        //return last position of "."
-//            int endIndex=fileName.length()-1;
-//            if (pos > 0) {
-//                fileName = fileName.substring(0, pos);
-//            }
-//            return fileName;
-//        }
-//
-//        //get FileExtension
-//        public String getFileExtension(String fileName){
-//            int pos = fileName.lastIndexOf(".");        //return last position of "."
-//            if (pos > 0) {
-//                fileName = fileName.substring(pos, fileName.length());
-//            }
-//            return fileName;
-//        }
-//
-//
-//    }
 }
 
