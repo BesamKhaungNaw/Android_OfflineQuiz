@@ -10,6 +10,7 @@ import android.util.Log;
 import com.learn.wiz.researchofflineqiz.Model.Answer;
 import com.learn.wiz.researchofflineqiz.Model.Question;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -54,6 +55,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 	public DatabaseHelper(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
+
 	}
 
 	@Override
@@ -83,12 +85,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		values.put(KEY_QUESTION_ID, question.getQuestion_id());
 		values.put(KEY_STATUS, question.getStatus());
 		// insert row
-		long todo_id = db.insert(TABLE_QUESTION, null, values);
-		return todo_id;
+		long row = db.insert(TABLE_QUESTION, null, values);
+		Log.i(Long.toString(row), "row, Question inserted successfully ");
+		return row;
 	}
 
 	/**
-	 * getting all todos
+	 * getting all
 	 * */
 	public List<Question> getAllToDos() {
 		List<Question> todos = new ArrayList<>();
@@ -112,10 +115,23 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		return todos;
 	}
 
+	/*
+ * Updating a Answer
+ */
+	public int updateQueston(Question question) {
+		SQLiteDatabase db = this.getWritableDatabase();
+		ContentValues values = new ContentValues();
+		values.put(KEY_STATUS, question.getStatus());
+
+		// updating row
+		return db.update(TABLE_QUESTION, values, KEY_QUESTION_ID + " = ?",
+				new String[] { String.valueOf(question.getQuestion_id()) });
+	}
+
 	// ------------------------ "Answer" table methods ----------------//
 
 	/*
-	 * Creating a todo
+	 * Insert Answer
 	 */
 	public long createAnswer(Answer answer) {
 		SQLiteDatabase db = this.getWritableDatabase();
@@ -124,8 +140,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		values.put(KEY_VALUE,answer.getValue());
 		values.put(KEY_QUESTION_ID,answer.getQuestion().getQuestion_id());
 		// insert row
-		long todo_id = db.insert(TABLE_ANSWER, null, values);
-		return todo_id;
+		long row = db.insert(TABLE_ANSWER, null, values);
+		Log.i(Long.toString(row), "row, Answer inserted successfully ");
+		return row;
 	}
 
 	/**
@@ -155,6 +172,25 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 			} while (c.moveToNext());
 		}
 		return answers;
+	}
+
+	/**
+	 * Update Answer
+	 */
+	/*
+ * Updating a Answer
+ */
+	public int updateAnswer(Answer answer) {
+		SQLiteDatabase db = this.getWritableDatabase();
+
+		ContentValues values = new ContentValues();
+		values.put(KEY_ANSWER_NAME, answer.getAnswer_name());
+		values.put(KEY_VALUE,answer.getValue());
+		values.put(KEY_QUESTION_ID,answer.getQuestion().getQuestion_id());
+
+		// updating row
+		return db.update(TABLE_ANSWER, values, KEY_ANSWER_ID + " = ?",
+				new String[] { String.valueOf(answer.getAnswer_id()) });
 	}
 
 

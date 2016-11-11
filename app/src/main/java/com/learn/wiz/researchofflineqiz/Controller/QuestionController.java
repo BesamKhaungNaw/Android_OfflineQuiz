@@ -1,4 +1,6 @@
 package com.learn.wiz.researchofflineqiz.Controller;
+import android.util.Log;
+
 import com.learn.wiz.researchofflineqiz.Model.Answer;
 import com.learn.wiz.researchofflineqiz.Model.Question;
 import com.learn.wiz.researchofflineqiz.helper.Utilities;
@@ -13,15 +15,20 @@ public class QuestionController {
 
     public static void createQuestions(List<Question> questions){
 
-        for (Question question:
-                questions) {
-            Utilities.db.createQuestion(question);
-            for (Answer answer:
-                    question.getAnswers()){
-                Utilities.db.createAnswer(answer);
-            }
-        }
+        try{
 
+            for (Question question:
+                    questions) {
+                Utilities.db.createQuestion(question);
+                for (Answer answer:
+                        question.getAnswers()){
+                    Utilities.db.createAnswer(answer);
+                }
+            }
+
+        } catch (Exception e){
+            Log.i(e.toString(), "Duplicate Items ");
+        }
         System.out.println("Finished Created Questions and answers ");
     }
 
@@ -34,4 +41,13 @@ public class QuestionController {
         return questionsList;
     }
 
+    //Update Answer
+    public static void UpdateAnswer(Answer answer){
+        Log.i(Long.toString( Utilities.db.updateAnswer(answer)), "Updated Answer Rows ");
+    }
+
+    //Update Question
+    public static void UpdateQuestion(Question question){
+        Log.i(Long.toString( Utilities.db.updateQueston(question)), "Updated Question Rows ");
+    }
 }

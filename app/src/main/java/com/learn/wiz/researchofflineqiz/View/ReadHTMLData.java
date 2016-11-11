@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.util.Log;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -21,6 +22,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -102,7 +104,7 @@ public class ReadHTMLData extends Activity {
                     //    System.out.println("This is iterated string "+json_data.get(iterator.next().toString()));
                     String question_key =iterator.next().toString();
                     jArray =new JSONArray(json_data.get(question_key).toString());
-                    System.out.println("This is JArray string "+jArray.toString());
+                  //  System.out.println("This is JArray string "+jArray.toString());
 
                     Question q = new Question(question_key);
 
@@ -113,8 +115,10 @@ public class ReadHTMLData extends Activity {
                     list.add(q);
 
                 }
-
+                
                 QuestionController.createQuestions(list);
+                File dbFile = getDatabasePath("QizDB");
+                Log.i(dbFile.getAbsolutePath(), "Absolute path ");
                 Intent intent = new Intent(ReadHTMLData.this, Sqlite.class);
                 startActivity(intent);
             } catch (Exception e){

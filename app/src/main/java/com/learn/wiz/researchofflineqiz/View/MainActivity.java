@@ -4,6 +4,7 @@ import android.Manifest;
 import android.app.Activity;
 import android.app.Dialog;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.AsyncTask;
@@ -95,6 +96,7 @@ public class MainActivity extends Activity {
                 new DownloadTask().execute(file_url=txt_downloadURL.getText().toString());
             }
         });
+
     }
 
     /**

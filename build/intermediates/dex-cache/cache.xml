@@ -52,7 +52,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="1bf76c5032e547f00c86f63803ca4ca13e78d797">
+        sha1="b7568b225b212babff3e1c26ecb10b3406635e70">
         <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_baa07d14079db0475659fb5e4055309c53c5c8fd\classes.dex" />
     </item>
     <item
@@ -178,7 +178,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="e60cb701fd7205b430c9cf8ddc9990210de8b80e">
+        sha1="f6104ff590523434481b6ab0a024fda358665179">
         <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_5ffe681c47ff5ff270b34d52cc763b4559234782\classes.dex" />
     </item>
 
