@@ -58,14 +58,6 @@ public class ReadHTMLData extends Activity {
                 }
             }
         });
-
-<<<<<<< Updated upstream:app/src/main/java/com/learn/wiz/researchofflineqiz/View/ReadHTMLData.java
-        //sampleQizForm.html is the html form that want to test
-        String filePath = String.format("file://%s/%s",Environment.getExternalStorageDirectory(),"sampleQizForm.html");
-=======
-        String filePath = String.format("file://%s/%s",Environment.getExternalStorageDirectory(),"Qiz1024.html");
->>>>>>> Stashed changes:app/src/main/java/com/learn/wiz/researchofflineqiz/ReadHTMLData.java
-        webView.loadUrl(filePath);
     }
 
 
@@ -116,15 +108,12 @@ public class ReadHTMLData extends Activity {
                     //get Answer values as [key:value]
                     for(int i=0;i<jArray.length();i++){
                         JSONObject data = new JSONObject(jArray.get(i).toString());
-//                        System.out.println("This is data object "+data.toString());
-//                        System.out.println("This is data keys "+data.keys().next().toString());
-//                        System.out.println("This is value "+ data.get(data.keys().next().toString()).toString());
+                        //Create new answers that is related with that question OO way
                         new Answer(data.keys().next().toString(),data.get(data.keys().next().toString()).toString(),q);
                     }
                     list.add(q);
-
                 }
-
+                //Insert Questions and answers to tables of sqlite db
                 createQuestions(list);
                // System.out.println("this is json-data "+json_data.toString());
              //   Toast.makeText(ReadHTMLData.this, list.toString(), Toast.LENGTH_LONG).show();
