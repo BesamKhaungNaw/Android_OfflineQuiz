@@ -1,9 +1,10 @@
 package com.learn.wiz.researchofflineqiz.Controller;
 import android.util.Log;
-
 import com.learn.wiz.researchofflineqiz.Model.Answer;
+import com.learn.wiz.researchofflineqiz.Model.JSONParser;
 import com.learn.wiz.researchofflineqiz.Model.Question;
 import com.learn.wiz.researchofflineqiz.helper.Utilities;
+import org.json.JSONObject;
 
 import java.util.List;
 
@@ -13,6 +14,7 @@ import java.util.List;
 
 public class QuestionController {
 
+    private static String host = "http://192.168.7.81/OfflineQuizApp/api/quiz";
     public static void createQuestions(List<Question> questions){
 
         try{
@@ -49,5 +51,22 @@ public class QuestionController {
     //Update Question
     public static void UpdateQuestion(Question question){
         Log.i(Long.toString( Utilities.db.updateQueston(question)), "Updated Question Rows ");
+    }
+
+    public static String sync(Question question) {
+        JSONObject user_object = new JSONObject();
+
+        System.out.println("converted json value is "+ JSONParser.fromPojoToJson(question));
+      //  JSONObject ne = new JSONObject();
+        try {
+            user_object.put("ID", "");
+            user_object.put("JSONData",JSONParser.fromPojoToJson(question));
+            user_object.put("Sync_Date","");
+            System.out.println(user_object.toString());
+          //  ne.put("model",user_object.toString());
+        } catch (Exception e) {
+        }
+        return JSONParser.postStream(host, user_object.toString());
+
     }
 }

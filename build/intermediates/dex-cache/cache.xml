@@ -52,7 +52,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="b7568b225b212babff3e1c26ecb10b3406635e70">
+        sha1="534ae0002b8b2ca90cc573301608480347492f32">
         <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_baa07d14079db0475659fb5e4055309c53c5c8fd\classes.dex" />
     </item>
     <item
@@ -178,8 +178,17 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="f6104ff590523434481b6ab0a024fda358665179">
+        sha1="dad6d2002ec6c7ddf7032b42ec3f6eb23719eda9">
         <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_5ffe681c47ff5ff270b34d52cc763b4559234782\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\besam\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.5\686c608d1805b6d4d425ec4459e88164ffc85870\gson-2.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="686c608d1805b6d4d425ec4459e88164ffc85870">
+        <dex dex="C:\Users\besam\ResearchOfflineQiz\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.5_d9e7f9c70a6597945b3c85795cb97ecd2839fc61\classes.dex" />
     </item>
 
 </items>

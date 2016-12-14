@@ -1,5 +1,7 @@
 package com.learn.wiz.researchofflineqiz.Model;
 
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,10 +10,10 @@ import java.util.List;
  */
 
 public class Question {
+
     String question_id;
     String status;
     List<Answer> answers;
-
     // constructors
     public Question() {
         answers = new ArrayList<>();
@@ -45,4 +47,7 @@ public class Question {
     }
 
     public List<Answer> getAnswers(){return  this.answers;}
+
+
+
 }
